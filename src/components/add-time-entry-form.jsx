@@ -25,14 +25,14 @@ const AddTimeEntryForm = () => {
     return (
       <form onSubmit={onSubmit}>
         <div>
-            <label>Title</label>
+            <label>Nombre</label>
             <input type='text' value={title} onChange={e => setTitle(e.currentTarget.value)}/>
         </div>
         <div>
-            <label>Time</label>
+            <label>Tiempo</label>
             <input type='nombre' value={time} onChange={e => setTime(e.currentTarget.value)}/>
         </div>
-        <button>Add Entry Time</button>
+        <button>Crear</button>
       </form>
     )
 }

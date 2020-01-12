@@ -45,7 +45,7 @@ const TimeList = () => {
       <div>
         <h2>Lista de Tiempos</h2>
         <div>
-          <label>Sort By:</label>
+          <label>Ordenar por:</label>
           <select value={sortBy} onChange={e => setSortBy(e.currentTarget.value)}>
             <option value="TIME_ASC">Tiempo (menor a mayor)</option>
             <option value="TIME_DESC">Tiempo (mayor a menor)</option>
@@ -59,8 +59,8 @@ const TimeList = () => {
             <li key={time.id}>
                 <div className="time-entry">
                     {time.title}
-                    <code className="time">{time.time_seconds} seconds</code>
-                    <button onClick={() => deleteTime(time.id)}>Delete</button>
+                    <code className="time">{time.time_seconds} segundos</code>
+                    <button onClick={() => deleteTime(time.id)}>Eliminar</button>
                 </div>
             </li>
             )}
