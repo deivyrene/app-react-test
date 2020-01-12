@@ -26,11 +26,11 @@ const AddTimeEntryForm = () => {
       <form onSubmit={onSubmit}>
         <div>
             <label>Nombre</label>
-            <input type='text' value={title} onChange={e => setTitle(e.currentTarget.value)}/>
+            <input type='text' required value={title} onChange={e => setTitle(e.currentTarget.value)}/>
         </div>
         <div>
             <label>Tiempo</label>
-            <input type='nombre' value={time} onChange={e => setTime(e.currentTarget.value)}/>
+            <input type='number' required value={time} onChange={e => setTime(e.currentTarget.value)}/>
         </div>
         <button>Crear</button>
       </form>
